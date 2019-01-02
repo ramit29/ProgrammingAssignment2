@@ -3,6 +3,7 @@
 
 ## Write a short comment describing this function
 
+#sets and get values of matrix and inverse
 makeCacheMatrix <- function(x = matrix()) {
       m <- NULL
       set <- function(y) {
@@ -20,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+#checks for cache for already computed inverse, other wise computes inverse
 cacheSolve <- function(x, ...) {
         m <- x$getinverse
         if(!is.null(m)) {
